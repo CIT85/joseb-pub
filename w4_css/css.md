@@ -42,3 +42,11 @@ I did not see the video until after the commit
 - vs code helps alot with choosing the colors
 - color pallet can be dragged to choose color
 - pair numbers can be shorthanded
+
+#CSS Units
+- default size in pixels is 16
+- a pixel is 1/96th of an inch
+- percentages are relative
+- its best to use rem instead of em
+- em is best used for buttons and margins
+- 
