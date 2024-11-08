@@ -57,3 +57,6 @@ I did not see the video until after the commit
 # CSS Typography
 - Fallback works by going by the list of fonts and evaluating, if the first font doess not exist the apply the second
 - name has a space then will need to wrap with quotes
+
+# CSS Links
+- Pseudo class represents the current state 
