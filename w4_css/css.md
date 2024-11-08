@@ -53,3 +53,7 @@ I did not see the video until after the commit
 # CSS Box Model
 - the computed tab shows the size of the content and the margin, border and padding in color.
 - you can see what is being ignored
+
+# CSS Typography
+- Fallback works by going by the list of fonts and evaluating, if the first font doess not exist the apply the second
+- name has a space then will need to wrap with quotes
