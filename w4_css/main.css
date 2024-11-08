@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/family=roboto&display=swap')
 body {
     padding: 10%;
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 /* input, button {
     font: inherit;
