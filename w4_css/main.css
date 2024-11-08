@@ -1,0 +1,11 @@
+body {
+    padding: 10%;
+    font-size: 2rem;
+}
+/* input, button {
+    font: inherit;
+} */
+
+p {             
+    line-height: 1.5;
+}
