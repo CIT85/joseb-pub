@@ -6,17 +6,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: blue;
+    color: hsl(207, 44%, 49%);
 }
 
-a:visited {
+/* a:visited {
     color: blueviolet;
-}
+} */
 
-a:hover {
-    color: dodgerblue;
+a:hover, a:focus {
+    color: hsl(189, 44%, 49%);
 }
 a:active {
 color: red;
