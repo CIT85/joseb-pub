@@ -1,17 +1,12 @@
-@import url('https://fonts.googleapis.com/family=roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     padding: 10%;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
-/* input, button {
-    font: inherit;
-} */
-
-p {             
-    line-height: 1.5;
-    /* letter-spacing: 0.1em; */
-    /* word-spacing: 0.5em; */
-    /* font-weight: 900; */
-    font-family: 'Courier New', Courier, monospace;
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
 }
