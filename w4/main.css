@@ -14,10 +14,63 @@ a:visited {
 a:hover,a:active {
     color: #eee;
 }
-table, tr, th, td, caption {
+caption {
     border: 1px solid #eee;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
     padding: 0.5rem;
 
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #ccc;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hover effects for rows */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+.lesson-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+}
+
+.lesson-table th {
+    background-color: #ff8c00;
+}
+
+.lesson-table td {
+    background-color: #ffeecc;
+}
+.activity-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-table th {
+    background-color: #f39c12;
+}
+
+.activity-table td {
+    background-color: #fff3e6;
 }

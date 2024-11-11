@@ -43,11 +43,60 @@
                     putting the information in one place. It serves as a advanced search engine.
                 </p>
                 <figure>
-                    <img src="../img/gpt.png" alt="ChatGPT working" title="GPT doing work" width="300"
-                        height="300">
+                    <img src="../img/gpt.png" alt="ChatGPT working" title="GPT doing work" width="300" height="300">
                     <figcaption>ChatGPT Looking for information</figcaption>
                 </figure>
             </section>
         </article>
-        </main>
+        <article>
+            <h2>Contact Us</h2>
+            <form action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <p><label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" cols="30" rows="10" name="comments" rows="4"
+                        placeholder="Your feedback..."></textarea>
+                </fieldset>
+                <label for="info">Additional Information</label>
+                <fieldset>
+                    <legend>Select Fav Subjects</legend>
+                    <p>
+                        <input type="checkbox" name="subject" id="Math" value="Math">
+                        <label for="Math">Math</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="subject" id="English" value="English">
+                        <label for="English">English</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="subject" id="WebDev" value="WebDev">
+                        <label for="WebDev">WebDev</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="subject" id="PE" value="PE">
+                        <label for="PE">PE</label>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </article>
+
+        <article>
+            <h2>Understanding the Output from httpbin</h2>
+            <p>When you submit the form, the action sends the data to the httpbin API, which simulates the POST request
+                and returns the data you sent. By examining the response from httpbin, you can verify that the form
+                submission was successful, see what data was sent, and troubleshoot any issues.</p>
+        </article>
+    </main>
 </body>
