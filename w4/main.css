@@ -1,76 +1,61 @@
-html {
+html { /* specificity 0,0,0,1 because its an element and can be overriden*/
     font-size: 22px
 }
-body {
-    background-color: #333;
-    color: whitesmoke;
-}
-a {
-    color: aliceblue;
-}
-a:visited {
-    color: lightgray;
-}
-a:hover,a:active {
-    color: #eee;
-}
-caption {
-    border: 1px solid #eee;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
 
+body {
+    background-color: #f0f4f8; /* Light background for readability */
+    color: #333; /* Text color for main readability */
+    margin: 20;
+    padding: 20;
+    font-family: Arial, sans-serif;
 }
+
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+a {
+    color: #bde0fe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #03045e;
+}
+
+a:active {
+    color: #003d73;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
 }
-table th, table td {
-    padding: 12px;
+
+table,
+th,
+td {
+    border: 1px solid #4a90e2;
+    padding: 10px;
     text-align: left;
-    border: 2px solid #ccc;
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4a90e2;
+    color: #fff;
 }
 
 td {
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Hover effects for rows */
-table tr:hover {
-    background-color: #f1f1f1;
-}
-.lesson-table {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fafafa;
-}
-
-.lesson-table th {
-    background-color: #ff8c00;
-}
-
-.lesson-table td {
-    background-color: #ffeecc;
-}
-.activity-table {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.activity-table th {
-    background-color: #f39c12;
-}
-
-.activity-table td {
-    background-color: #fff3e6;
+    background-color: #d3e6f5;
 }
