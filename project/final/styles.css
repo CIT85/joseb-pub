@@ -264,7 +264,12 @@ input, textarea {
 input:focus, textarea:focus {
     border-color: #fa8a2f;
 }
-
+input, textarea {
+    width: 97%; /* Ensure full-width inputs */
+}
+label, input, textarea {
+    display: block; /* Stack label, input, and textarea */
+}
 button {
     padding: 10px 20px;
     font-size: 1em;
