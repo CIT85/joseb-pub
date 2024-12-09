@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #fa8a2f, #ffd22b);
+    color: #333;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background: linear-gradient(45deg, #fa8a2f, #ffd22b);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Section */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Ensure a consistent look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    background: #f10124;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-title {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    background: #000;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #333;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f10124;
+}
+
+p {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.content-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.content-layout img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tables */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table thead {
+    background-color: purple;
+    color: #fff;
+    font-weight: bold;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1em;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9em;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.palette {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.color-label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content-layout {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    img {
+        max-width: 90%;
+        /* Limit width for smaller screens */
+        height: auto;
+    }
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-links a {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+
+    .content-layout {
+        gap: 10px;
+    }
+
+    img {
+        max-width: 95%;
+        /* Slight adjustment for tablets */
+    }
+}
+
+/* Small Screens, Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content-layout {
+        gap: 15px;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    img {
+        max-width: 100%;
+        /* Default scaling for laptops */
+    }
+}
+
+/* Desktops, Large Screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .nav-links a {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Extra Large Screens, TV */
+@media (min-width: 1201px) {
+    .nav-links a {
+        font-size: 1.3em;
+        padding: 15px 20px;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 80%;
+        /* Constrain image size for very large screens */
+    }
+}
